@@ -171,7 +171,7 @@ body:before{content:"";position:fixed;inset:0;background-image:radial-gradient(#
 @media(max-width:768px){
 .luxury-counter{flex-direction:column;gap:1.5rem}
 .counter-item{min-width:auto}
-.polaroid-gallery{grid-template-columns:1fr 1fr}
+.polaroid-gallery{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:1rem}
 .pin-digit{width:55px;height:55px;font-size:24px}
 .story-section{padding:1rem}
 .birthday-card{padding:42px 18px}
@@ -191,7 +191,9 @@ body:before{content:"";position:fixed;inset:0;background-image:radial-gradient(#
 }
 
 @media(max-width:480px){
-.polaroid-gallery{grid-template-columns:1fr}
+.polaroid-gallery{grid-template-columns:1fr !important;gap:1.5rem;max-width:100%;padding:0 0.5rem}
+.polaroid{max-width:100%;margin:0 auto}
+.polaroid img{width:100%;height:auto;min-height:250px;max-height:350px}
 .pin-digit{width:50px;height:50px;font-size:22px}
 .pin-input{gap:8px}
 .letter-paper{padding:2rem 1.5rem}
